@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        /* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(43, 117, 43, 0.7);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c3ffc3;
+}
+
+/* Sección Hero */
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 150px 0;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2b752b;
+}
+
+hero-description {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+/* Servicios */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.service {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    background-color: #2b752b;
+    color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2b752b;
+}
+
+service p {
+    font-size: 18px;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Sección Contacto */
+.contact {
+    background-color: #2b752b;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+contact-info {
+    width: 50%;
+}
+
+contact-form {
+    width: 50%;
+}
+
+contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input-group {
+    margin-bottom: 20px;
+}
+
+input-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input-group input, input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+input-group textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #2b752b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1c501c;
+}
+
+/* Footer */
+footer {
+    background-color: #2b752b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+        /* Estilos específicos para la sección de Servicios */
+.services {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2b752b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.service-item {
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 80%; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra los divs horizontalmente */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-title {
+    font-size: 24px;
+    color: #2b752b;
+}
+
+.service-description {
+    font-size: 18px;
+    color: #666;
+}
+
+    </style>
+    <title>Servicios de LIMACK</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Screen2.html">Inicio</a></li>
+                <li><a href="Screen3.html">Acerca de</a></li>
+                <li><a href="Screen4.html">Servicios</a></li>
+                <li><a href="Screen5.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="services">
+        <div class="services-content">
+            <h2>Servicios de LIMACK</h2>
+            <div class="service-item">
+                <h3 class="service-title">Desarrollo Web</h3>
+                <p class="service-description">Creación de sitios web a medida.<br>Nuestro equipo de desarrolladores web altamente calificados diseña y construye sitios web personalizados que se adaptan a las necesidades únicas de su empresa. Ya sea un sitio web corporativo, una tienda en línea o una plataforma de comercio electrónico, ofrecemos soluciones de desarrollo web de vanguardia.</p>
+            </div>
+
+            <br><br>
+
+            <div class="service-item">
+                <h3 class="service-title">Aplicaciones Móviles</h3>
+                <p class="service-description">Desarrollo de apps para iOS y Android.<br>Creamos aplicaciones móviles innovadoras que ayudan a su negocio a llegar a una audiencia más amplia. Desde aplicaciones de productividad hasta juegos adictivos, nuestros desarrolladores de aplicaciones móviles están listos para convertir sus ideas en aplicaciones exitosas.</p>
+            </div>
+
+            <br><br>
+
+            <div class="service-item">
+                <h3 class="service-title">Consultoría</h3>
+                <p class="service-description">Asesoramiento en tecnología y estrategia.<br>Nuestros expertos en tecnología y estrategia están disponibles para brindarle asesoramiento y orientación en la implementación de soluciones tecnológicas. Desde la planificación estratégica hasta la optimización de procesos, lo ayudamos a aprovechar al máximo la tecnología en su empresa.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 LIMACK</p>
+    </footer>
+</body>
+</html>
